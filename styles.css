@@ -43,11 +43,15 @@ h1 {
 .page__header {
   background-color: aqua;
   /* background-color: rgb(10, 46, 47); */
+  width: 100%;
+  height: 10%;
 }
 .page__content {
   background-color: rgb(10, 46, 47);
   display: flex;
   flex: 1;
+  width: 100%;
+  height: 90%;
 }
 
 .left-content {
@@ -177,7 +181,8 @@ a {
 }
 
 p {
-  margin: 50px 0px;
+  margin: 5% 7%;
+  /* padding: 5% 0px; */
   color: #d6dbe1;
 }
 
@@ -198,6 +203,17 @@ h2 {
 span {
   font-style: italic;
 }
+
+#about {
+  display: flex;
+  flex-direction: column;
+}
+
+#experience {
+  display: flex;
+  flex-direction: column;
+}
+
 /* @media all and (min-width: 767px) {
   .both-content { flex: 1 0 0; }
   
@@ -209,3 +225,6 @@ span {
   .main-content { order: 1; }
   .right-content { order: 2; }
 } */
+
+/* 1024px height * 768px width computer */
+/* less than 767px width smartphone or tablet PC*/
