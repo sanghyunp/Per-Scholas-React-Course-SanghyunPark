@@ -1,99 +1,109 @@
 h1 {
   margin: 0;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .big-heading {
   font-family: Verdana;
   color: #c0f5f3;
+  text-align: center;
 }
 
 .section-heading {
   /* Add your own font here */
   font-family: 'Times New Roman', Times, serif;
   margin: 50px 0px;
-  color: #d6e1e0;
-  
+  /* color: #d6e1e0; */
 }
 
 .nav__list {
-  /* list-style-type: none; */
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */
-  /* justify-content: flex-end; */
-  /* text-align: center; */
   list-style-position: inside;
 }
 
-/* Add padding bewteen nav__list_item-items */
 .nav__list_item {
   font-family: 'Didot', serif;
   font-size: 15px;
-  color: #d6e1e0;
+  /* color: #d6e1e0; */
   letter-spacing: 1px;
   margin: 20px 10px;
+  /* text-decoration: none; */
 }
 
 .page {
   display: flex;
-  flex-flow: row wrap;
-  font-weight: bold;
+  flex-direction: column;
   /* height: 100%; */
-  /* width: 100%; */
-  /* text-align: center; */
-  /* background-color: rgba(10, 46, 47); */
+  font-weight: bold;
 }
 
 .page__header {
-  background-color: rgb(10, 46, 47);
-
+  background-color: aqua;
+  /* background-color: rgb(10, 46, 47); */
 }
 .page__content {
   background-color: rgb(10, 46, 47);
   display: flex;
-  flex-flow: row wrap;
+  flex: 1;
 }
 
 .left-content {
-  background-color: rgba(10, 46, 47);
-  /* flex-basis: 5%; */
+  background-color: burlywood;
+  /* background-color: rgba(10, 46, 47); */
   display: flex;
+  /* flex: none; */
+  width: 5%;
   flex-direction: column;
-  align-self:flex-end;
-  padding-left: 40px;
+  align-self: flex-end;
+  justify-content: space-evenly;
+  margin: 1% 0px;
+  /* letter-spacing: 3px; */
+  /* padding-left: 0px; */
+  /* align-self: flex-end; */
 }
 
 .right-content {
+  background-color: burlywood;
   font-family: 'Bradley Hand', cursive;
-  background-color: rgba(10, 46, 47);
-  /* flex-basis: 5%; */
-  align-self:flex-end;
+  /* background-color: rgba(10, 46, 47); */
+  display: flex;
+  flex: none;
+  width: 5%;
   writing-mode: vertical-rl;
-  color: #d6e1e0;
-  /* border: solid 1px #88d084; */
+  flex-direction: column;
+  align-self: flex-end;
+  justify-content: space-evenly;
+  margin: 1% 0px;
+  letter-spacing: 3px;
+  /* color: #d6e1e0; */
 }
 
-/* Scroll moving function */
+/* Scroll Moving Function */
 .main-content {
-  /* flex-basis: 90%; */
-  margin: 0px;
-  /* padding: 0px; */
+  /* display: flex; */
   display: block;
-  /* width: 80%; */
-  /* height: 0px; */
+  /* flex: 1; */
+  overflow: auto;
+  width: 90%;
   border: 1px solid #88d084;
   border-radius: 5px;
   overflow: auto;
   scroll-snap-type: y mandatory;
+  /* margin: 0px; */
+  /* flex-wrap: wrap; */
+  /* margin: 0px 0px 10px 0px; */
+  /* padding: 0px 0px 10px 0px; */
+  /* flex-direction: column; */
+  flex-direction: column;
 }
 
-/* I will touch it for Responsive Web */
-/* Scroll moving function */
+/* Scroll Moving Function */
 .main-content__section {
-  background-color: rgba(10, 46, 47);
+  background-color: cornsilk;
+  /* background-color: rgba(10, 46, 47); */
   display: flex;
   height: 100%;
   align-items: center;
@@ -102,43 +112,33 @@ h1 {
 }
 
 /* Add new line below here */
-/* logo and nav__list position */
+/* Make to fit any screen size */
+html, body {
+  height: 100%;
+}
+
+/* Logo and nav__list position */
 .nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-/* logo position */
-.logo {
-  /* align-self: flex-start; */
-}
-
 /* Logo Setting */
 .linked__logo {
   padding: 10px;
-  font-size: 32px;
-}
-
-.page > * {
-  padding: 10px;
-  flex: 1 100%;
-}
-
-.page__content > * {
-  padding: 10px;
-  flex: 1 100%;
-  /* height: 100%; */
+  font-size: 55px;
 }
 
 /* icon setting */
 .linked__icon {
   padding: 10px;
   font-size: 28px;
-  
+  margin-left: 10%;
+  margin-right: 40px;
 }
 
-/* left icon color */
+/* Icons color */
 i {
   color: rgb(11, 130, 149);
 }
@@ -148,9 +148,14 @@ i {
   text-align: center;
 }
 
-/* Name and Simple describe */
-#intro {
-  margin: 300px 0px 0px 0px;
+.go_top > * {
+  font-size: 20px;
+}
+
+/* Remove underline in the nav */
+a {
+  text-decoration: none;
+  /* color: #d6e1e0; */
 }
 
 /* Get in Touch Button Setting */
@@ -173,34 +178,34 @@ i {
 
 p {
   margin: 50px 0px;
-  /* margin: 40% 0%; */
-  /* margin: 300px 0px 0px 0px; */
   color: #d6dbe1;
 }
 
-@media all and (min-width: 767px) {
-  .both-content { flex: 1 0 0; }
-  
+/* Show  */
+.page__content > * {
+  padding: 10px;
 }
 
-/* Tablet PC Vertical */
-/* @media (min-width: 768px) and (max-width: 991px) {
-  .main-content    { flex: 3 0px; }
-  .left-content { order: 0; } 
-  .main-content { order: 1; }
-  .right-content { order: 2; }
-} */
-/* Tablet PC Horizontal */
-/* @media (min-width: 992px) and (max-width: 1199px) {
-  .main-content    { flex: 3 0px; }
-  .left-content { order: 0; } 
-  .main-content { order: 1; }
-  .right-content { order: 2; }
+/* Name and Simple describe */
+#intro {
+  margin: 300px 0px 0px 0px;
+}
+
+h2 {
+  text-align: center;
+}
+
+span {
+  font-style: italic;
+}
+/* @media all and (min-width: 767px) {
+  .both-content { flex: 1 0 0; }
+  
 } */
 
-@media all and (min-width: 768px) {
+/* @media all and (min-width: 768px) {
   .main-content { flex: 3 0px; }
   .left-content { order: 0; } 
   .main-content { order: 1; }
   .right-content { order: 2; }
-}
+} */
