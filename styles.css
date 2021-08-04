@@ -1,6 +1,5 @@
 h1 {
   margin: 0;
-  /* text-align: center; */
 }
 
 .big-heading {
@@ -13,7 +12,7 @@ h1 {
   /* Add your own font here */
   font-family: 'Times New Roman', Times, serif;
   margin: 50px 0px;
-  /* color: #d6e1e0; */
+  color: #d6e1e0;
 }
 
 .nav__list {
@@ -27,7 +26,7 @@ h1 {
 .nav__list_item {
   font-family: 'Didot', serif;
   font-size: 15px;
-  /* color: #d6e1e0; */
+  color: #d6e1e0;
   letter-spacing: 1px;
   margin: 20px 10px;
   /* text-decoration: none; */
@@ -36,15 +35,12 @@ h1 {
 .page {
   display: flex;
   flex-direction: column;
-  /* height: 100%; */
   font-weight: bold;
 }
 
 .page__header {
-  background-color: aqua;
-  /* background-color: rgb(10, 46, 47); */
+  background-color: rgb(10, 46, 47);
   width: 100%;
-  height: 10%;
 }
 .page__content {
   background-color: rgb(10, 46, 47);
@@ -55,24 +51,18 @@ h1 {
 }
 
 .left-content {
-  background-color: burlywood;
-  /* background-color: rgba(10, 46, 47); */
+  background-color: rgba(10, 46, 47);
   display: flex;
-  /* flex: none; */
   width: 5%;
   flex-direction: column;
   align-self: flex-end;
   justify-content: space-evenly;
   margin: 1% 0px;
-  /* letter-spacing: 3px; */
-  /* padding-left: 0px; */
-  /* align-self: flex-end; */
 }
 
 .right-content {
-  background-color: burlywood;
   font-family: 'Bradley Hand', cursive;
-  /* background-color: rgba(10, 46, 47); */
+  background-color: rgba(10, 46, 47);
   display: flex;
   flex: none;
   width: 5%;
@@ -82,32 +72,24 @@ h1 {
   justify-content: space-evenly;
   margin: 1% 0px;
   letter-spacing: 3px;
-  /* color: #d6e1e0; */
+  color: #d6e1e0;
 }
 
 /* Scroll Moving Function */
 .main-content {
-  /* display: flex; */
   display: block;
-  /* flex: 1; */
   overflow: auto;
   width: 90%;
   border: 1px solid #88d084;
   border-radius: 5px;
   overflow: auto;
   scroll-snap-type: y mandatory;
-  /* margin: 0px; */
-  /* flex-wrap: wrap; */
-  /* margin: 0px 0px 10px 0px; */
-  /* padding: 0px 0px 10px 0px; */
-  /* flex-direction: column; */
   flex-direction: column;
 }
 
 /* Scroll Moving Function */
 .main-content__section {
-  background-color: cornsilk;
-  /* background-color: rgba(10, 46, 47); */
+  background-color: rgba(10, 46, 47);
   display: flex;
   height: 100%;
   align-items: center;
@@ -159,7 +141,7 @@ i {
 /* Remove underline in the nav */
 a {
   text-decoration: none;
-  /* color: #d6e1e0; */
+  color: #d6e1e0;
 }
 
 /* Get in Touch Button Setting */
@@ -182,11 +164,9 @@ a {
 
 p {
   margin: 5% 7%;
-  /* padding: 5% 0px; */
   color: #d6dbe1;
 }
 
-/* Show  */
 .page__content > * {
   padding: 10px;
 }
@@ -214,17 +194,27 @@ span {
   flex-direction: column;
 }
 
-/* @media all and (min-width: 767px) {
-  .both-content { flex: 1 0 0; }
-  
-} */
+/* For Mobile */
+@media all and (max-width: 767px) {
+  .page__content {
+  flex-direction: column;
+  } 
 
-/* @media all and (min-width: 768px) {
-  .main-content { flex: 3 0px; }
-  .left-content { order: 0; } 
-  .main-content { order: 1; }
-  .right-content { order: 2; }
-} */
+  .left-content {
+    width: 97%;
+    flex-direction: row;
+    align-self: center;
+  }
 
-/* 1024px height * 768px width computer */
-/* less than 767px width smartphone or tablet PC*/
+  .right-content {
+  width: 97%;
+  writing-mode: horizontal-tb;
+  flex-direction: row;
+  align-self: center;
+  }
+
+  .main-content {
+  width: 97%;
+  align-self: center;
+  }
+}
