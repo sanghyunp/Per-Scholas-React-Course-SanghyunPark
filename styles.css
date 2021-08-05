@@ -4,7 +4,7 @@ h1 {
 
 .big-heading {
   font-family: Verdana;
-  color: #c0f5f3;
+  color: #d6f5c0;
   text-align: center;
 }
 
@@ -12,7 +12,7 @@ h1 {
   /* Add your own font here */
   font-family: 'Times New Roman', Times, serif;
   margin: 50px 0px;
-  color: #d6e1e0;
+  color: #92d7d1;
 }
 
 .nav__list {
@@ -153,13 +153,21 @@ a {
   color: #88d084;
 }
 
+/* Button Effect */
+#button:hover {
+  position: relative;
+  top: 2px;
+  border: solid 1px #88d0846b;
+  color: #88d0846b;
+}
+
 #button_position {
   text-align: center;
   margin: 150px 0px 150px 0px;
 }
 
 #small-heading {
-  color: #d6dbe1;
+  color: #92d7d1;
 }
 
 p {
