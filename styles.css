@@ -82,7 +82,7 @@ h1 {
   width: 90%;
   /* Border line for main-content color green */
   /* border: 1px solid #88d084; */
-  border-radius: 5px;
+  /* border-radius: 5px; */
   overflow: auto;
   scroll-snap-type: y mandatory;
   flex-direction: column;
