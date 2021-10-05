@@ -25,7 +25,7 @@ h1 {
 
 .nav__list_item {
   font-family: 'Didot', serif;
-  font-size: 15px;
+  font-size: 20px;
   color: #d6e1e0;
   letter-spacing: 1px;
   margin: 20px 10px;
@@ -80,7 +80,8 @@ h1 {
   display: block;
   overflow: auto;
   width: 90%;
-  border: 1px solid #88d084;
+  /* Border line for main-content color green */
+  /* border: 1px solid #88d084; */
   border-radius: 5px;
   overflow: auto;
   scroll-snap-type: y mandatory;
@@ -206,7 +207,7 @@ span {
 @media all and (max-width: 767px) {
   .page__content {
   flex-direction: column;
-  } 
+  }
 
   .left-content {
     width: 97%;
@@ -224,5 +225,13 @@ span {
   .main-content {
   width: 97%;
   align-self: center;
+  }
+
+  .nav__list_item {
+    font-family: 'Didot', serif;
+    font-size: 14px;
+    color: #d6e1e0;
+    letter-spacing: 1px;
+    margin: 20px 10px;
   }
 }
