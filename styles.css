@@ -81,7 +81,7 @@ h1 {
   overflow: auto;
   width: 90%;
   /* Border line for main-content color green */
-  /* border: 1px solid #88d084; */
+  border: 1px solid #88d084;
   /* border-radius: 5px; */
   overflow: auto;
   scroll-snap-type: y mandatory;
@@ -229,7 +229,7 @@ span {
 
   .nav__list_item {
     font-family: 'Didot', serif;
-    font-size: 14px;
+    font-size: 12px;
     color: #d6e1e0;
     letter-spacing: 1px;
     margin: 20px 10px;
